@@ -39,10 +39,8 @@ This sequence of commands will build and install the gem directly. This may be n
 
 Clone git repository:
 
-	<pre><code>
-git clone https://github.com/amoslanka/sprout-as3-signals.git sprout-as3-signals
-cd sprout-as3-signals
-	</code></pre>
+	<pre><code>git clone https://github.com/amoslanka/sprout-as3-signals.git sprout-as3-signals</code>
+		<code>cd sprout-as3-signals</code></pre>
 	
 Resolve dependencies:
 
