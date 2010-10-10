@@ -1,0 +1,43 @@
+
+h1. The AS3-Signals Sprout Gem
+
+h4. requires sprout, v >= 1.0.26.pre
+
+	Robert Penner's AS3-Signals ActionScript 3 source wrapped in a Sprout::Specification for implementation into a sprout project and Gem::Specification for distribution as a gem.
+	
+	This sprout gem includes the AS3-Signals source code forked from github.com/robertpenner/as3-signals. As a sprout, the source code will be copied to lib/as3-signals of your sprout project.
+	
+h3. Installation
+
+Intended for use with a project using Project Sprouts. 
+
+See information concerning Project Sprouts here: 
+* "http://github.com/lukebayes/project-sprouts" http://github.com/lukebayes/project-sprouts
+* "http://github.com/lukebayes/sprout-flashsdk" http://github.com/lukebayes/sprout-flashsdk
+
+Add the AS3-Signals gem to your Gemfile:
+
+	<pre><code>gem "as3signals"</code></pre>
+
+Add the AS3-Signals library dependency to your Rakefile:
+
+	<pre><code>library :as3signals</code></pre>
+
+Enter this shell command to resolve gem dependency: 
+
+	<pre><code>bundle install</code></pre>
+
+h3. Ruby Gem
+
+The gem can be installed independently of a project entering this command:
+
+<pre><code>gem install as3signals</code></pre>
+
+h3. Additional links
+
+* "AS3-Signals on GitHub":http://github.com/robertpenner/as3signals
+* "Sprouts Site":http://projectsprouts.org
+* "Sprouts on Github":http://github.com/lukebayes/project-sprouts
+* "flashsdk sprout on Github":http://github.com/lukebayes/sprout-flashsdk
+* "Sprouts Community":http://groups.google.com/group/projectsprouts
+

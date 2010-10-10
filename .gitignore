@@ -3,6 +3,7 @@ bin-debug/*
 bin-release/*
 bin/*
 doc/*
+pkg/*
 docs/*
 obj/*
 dist/*
