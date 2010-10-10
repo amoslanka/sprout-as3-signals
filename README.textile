@@ -37,16 +37,16 @@ h3. Build and Installation from Source
 
 This sequence of commands will build and install the gem directly. This may be necessary if updates are made before the gem is updated on rubygems.org.
 
-# Clone git repository:
+Clone git repository:
 
-	<pre><code>git clone https://github.com/amoslanka/sprout-as3-signals.git sprout-as3-signals</code></pre>
-	<pre><code>cd sprout-as3-signals</code></pre>
+	<pre><code>git clone https://github.com/amoslanka/sprout-as3-signals.git sprout-as3-signals
+		cd sprout-as3-signals</code></pre>
 	
-# Resolve dependencies
+Resolve dependencies:
 
 	<pre><code>bundle install</code></pre>
 
-# Run rake task
+Run rake task:
 
 	<pre><code>rake install</code></pre>
 
