@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
-require 'lib/as3signals'
+require File.join(File.dirname(__FILE__), "lib", "as3signals")
+# require 'lib/as3signals'
 
 Gem::Specification.new do |s|
   s.name        = AS3Signals::NAME
@@ -18,7 +19,7 @@ Gem::Specification.new do |s|
   
   s.files = FileList['lib/**/*.rb', 'bin/*', 'build/*', 'examples/**/*', 'src/**/*', '[A-Za-z0-9]*', 'tests/**/*'].to_a
 
-  s.add_dependency 'sprout', '>= 1.0.26.pre'
+  s.add_dependency 'sprout', '>= 1.0.0.pre'
   s.add_development_dependency 'asunit4'
 
 end

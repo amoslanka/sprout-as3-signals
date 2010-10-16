@@ -8,6 +8,7 @@ docs/*
 obj/*
 dist/*
 report/*
+vendor/
 
 .settings/*
 .actionScriptProperties
@@ -19,3 +20,6 @@ report/*
 Icon
 Thumbs.db
 .DS_Store
+
+.bundle
+Gemfile.lock

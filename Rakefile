@@ -1,6 +1,34 @@
 require 'bundler'
-require 'lib/as3signals'
-Bundler::GemHelper.install_tasks
+Bundler.require
+require 'rake/clean'
+
+CLOBBER.add('pkg')
+# require 'lib/as3signals'
+# Bundler::GemHelper.install_tasks
+
+filename = "#{AS3Signals::NAME}-#{AS3Signals::VERSION}"
+
+namespace :gem do
+  directory "pkg"
+  
+  desc 'Build the gem'
+  task :build => 'pkg' do
+    system "gem build #{AS3Signals::NAME}.gemspec"
+    system "mv #{filename}.gem pkg/#{filename}.gem"
+  end
+
+  desc "Build and install #{filename}.gem"
+  task :install => :build do
+    system "gem install pkg/#{filename}"
+  end
+
+  desc "Build and release #{filename}.gem to rubygems.org"
+  task :release => :build do
+    system "gem push #{filename}"
+  end
+end
+
+
 
 # testing disabled for now. do actual as3 testing in the origin
 

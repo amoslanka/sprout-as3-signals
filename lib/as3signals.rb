@@ -1,8 +1,7 @@
 require 'sprout'
+require File.join(File.dirname(__FILE__), "as3signals", "version")
 
 module AS3Signals
-  NAME = "as3signals"
-  VERSION = "0.7.0"
 end
 
 Sprout::Specification.new do |s|
