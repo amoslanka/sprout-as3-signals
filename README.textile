@@ -1,8 +1,6 @@
 
 h1. The AS3-Signals Sprout Gem
 
-h4. requires sprout, v >= 1.0.x.pre
-
 	Robert Penner's AS3-Signals ActionScript 3 source wrapped in a Sprout::Specification for implementation into a sprout project and Gem::Specification for distribution as a gem.
 	
 	This sprout gem includes the AS3-Signals source code forked from github.com/robertpenner/as3-signals. As a sprout, the source code will be copied to lib/as3-signals of your sprout project.
@@ -12,12 +10,12 @@ h3. Installation
 Intended for use with a project using Project Sprouts. 
 
 See information concerning Project Sprouts here: 
-* "http://github.com/lukebayes/project-sprouts" http://github.com/lukebayes/project-sprouts
-* "http://github.com/lukebayes/sprout-flashsdk" http://github.com/lukebayes/sprout-flashsdk
+* "http://github.com/lukebayes/project-sprouts":http://github.com/lukebayes/project-sprouts
+* "http://github.com/lukebayes/sprout-flashsdk":http://github.com/lukebayes/sprout-flashsdk
 
 Add the AS3-Signals gem to your Gemfile:
 
-	<pre><code>gem "as3signals"</code></pre>
+	<pre><code>gem "as3signals", ">= 0.7.0.pre"</code></pre>
 
 Add the AS3-Signals library dependency to your Rakefile:
 
@@ -25,13 +23,23 @@ Add the AS3-Signals library dependency to your Rakefile:
 
 Enter this shell command to resolve gem dependency: 
 
-	<pre><code>bundle install</code></pre>
+	<pre><code>$ bundle install vendor</code></pre>
 
 h3. Ruby Gem
 
 The gem can be installed independently of a project entering this command:
 
-	<pre><code>gem install as3signals</code></pre>
+	<pre><code>$ gem install as3signals --pre</code></pre>
+	
+h3. Available assets
+
+The gem provides the following options for how to include the library in your project. 
+
+<pre><code>library "as3signals", :swc		# => will include the swc at lib/as3signals</code></pre>
+
+<pre><code>library "as3signals", :src		# => will include the source code at lib/as3signals</code></pre>
+
+<pre><code>library "as3signals", :docs		# => will include the asdoc files at lib/as3signals</code></pre>
 	
 h3. Build and Installation from Source
 

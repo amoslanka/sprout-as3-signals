@@ -2,9 +2,10 @@
 
 	<!-- Set up a prefix for all environment variables. -->
 	<property environment="env."/>
-	<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
+	
+	<!-- <fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." /> -->
 	<!-- Copy Flex SDK location from environment variable. This can be set manually instead. -->
-	<property name="FLEX_HOME" value="${env.FLEX_HOME}" />
+	<!-- <property name="FLEX_HOME" value="${env.FLEX_HOME}" /> -->
 	<property file="build.properties"/>
 
 	<target name="swc" depends="" description="Compile AS3 code into a SWC">

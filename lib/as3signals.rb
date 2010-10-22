@@ -1,5 +1,6 @@
 require 'sprout'
-require File.join(File.dirname(__FILE__), "as3signals", "version")
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+require 'as3signals/version'
 
 module AS3Signals
 end
@@ -10,5 +11,7 @@ Sprout::Specification.new do |s|
    s.add_file_target do |t|
      t.platform = :universal
      t.add_library :src, "../src"
+     t.add_library :swc, "../bin"
+     t.add_library :docs, "../docs"
    end
 end

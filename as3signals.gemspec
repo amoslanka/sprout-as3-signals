@@ -1,25 +1,39 @@
 # -*- encoding: utf-8 -*-
-require File.join(File.dirname(__FILE__), "lib", "as3signals")
-# require 'lib/as3signals'
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+require 'as3signals/version'
 
 Gem::Specification.new do |s|
   s.name        = AS3Signals::NAME
   s.version     = AS3Signals::VERSION
-  # s.platform    = Gem::Platform::RUBY
-  # s.authors     = ["TODO: Write your name"]
-  s.email       = ["amoslanka@gmail.com"]
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Robert Penner"]
+  s.email       = ["info@robertpenner.com"]
   s.homepage    = "http://www.github.com/amoslanka/sprout-as3-signals"
   s.summary     = %q{AS3-Signals ActionScript 3 source wrapped in a Sprout::Specification for implementation into a sprout project and Gem::Specification for distribution as a gem.}
-  # s.description = %q{TODO: Write a gem description}
+  s.description = %q{Signals is a new approach for AS3 events, inspired by C# events and signals/slots in Qt.}
 
-  # s.files         = `git ls-files`.split("\n")
-  # s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  # s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   
-  s.files = FileList['lib/**/*.rb', 'bin/*', 'build/*', 'examples/**/*', 'src/**/*', '[A-Za-z0-9]*', 'tests/**/*'].to_a
+  s.files = Dir["{src,test,tests,asdoc,docs,doc,asdocs,lib,libs}/**/*", "bin/**/*.swc"]
+  s.files << Dir["*.gemspec", "gemfile", "build*", "[A-Z]*[.a-z]*"]
+  
+  # s.files.reject! do |fn| 
+  #   fn.include? "CVS"
+  #   fn.include? ".svn"
+  #   fn.include? ".git"
+  #   fn.include? "*.gem"
+  #   fn.include? "pkg"
+  #   fn.include? "vendor"
+  #   # fn.include? "**.cache"
+  #   fn.include? ".cache"
+  #   fn.include? ".as3proj"
+  #   fn.include? ".docproj"
+  # end
+  
+  # require 'pp'
+  # pp s.files
 
-  s.add_dependency 'sprout', '>= 1.0.0.pre'
+  s.add_dependency 'flashsdk', '>= 1.0.0.pre'
   s.add_development_dependency 'asunit4'
 
 end
