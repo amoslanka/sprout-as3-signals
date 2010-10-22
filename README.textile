@@ -40,7 +40,7 @@ The gem provides the following options for how to include the library in your pr
 <pre><code>library "as3signals", :src		# => will include the source code at lib/as3signals</code></pre>
 
 <pre><code>library "as3signals", :docs		# => will include the asdoc files at lib/as3signals</code></pre>
-	
+
 h3. Build and Installation from Source
 
 This sequence of commands will build and install the gem directly. This may be necessary if updates are made before the gem is updated on rubygems.org.
@@ -52,11 +52,15 @@ Clone git repository:
 	
 Resolve dependencies:
 
-	<pre><code>bundle install</code></pre>
+	<pre><code>bundle install vendor</code></pre>
 
-Run rake task:
+Compile swc and asdocs:
+	
+	<pre><code>rake compile</code></pre>
 
-	<pre><code>rake install</code></pre>
+Run rake gem:install task:
+
+	<pre><code>rake gem:install</code></pre>
 
 h3. Additional links
 
