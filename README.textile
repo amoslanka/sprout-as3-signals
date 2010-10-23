@@ -7,9 +7,8 @@ h1. The AS3-Signals Sprout Gem
 	
 h3. Installation
 
-Intended for use with a project using Project Sprouts. 
+Intended for use with a project using Project Sprouts. More information here: 
 
-See information concerning Project Sprouts here: 
 * "http://github.com/lukebayes/project-sprouts":http://github.com/lukebayes/project-sprouts
 * "http://github.com/lukebayes/sprout-flashsdk":http://github.com/lukebayes/sprout-flashsdk
 
