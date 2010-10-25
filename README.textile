@@ -34,11 +34,15 @@ h3. Available assets
 
 The gem provides the following options for how to include the library in your project. 
 
-<pre><code>library "as3signals", :swc		# => will include the swc at lib/as3signals</code></pre>
+<pre><code>library :as3signals				# => (default) will include the swc at lib/as3signals</code></pre>
 
-<pre><code>library "as3signals", :src		# => will include the source code at lib/as3signals</code></pre>
+<pre><code>library :as3signals, :swc		# => will include the swc at lib/as3signals</code></pre>
 
-<pre><code>library "as3signals", :docs		# => will include the asdoc files at lib/as3signals</code></pre>
+<pre><code>library :as3signals, :src		# => will include the source code at lib/as3signals</code></pre>
+
+<pre><code>library :as3signals, :docs		# => will include the asdoc files at lib/as3signals</code></pre>
+
+<pre><code>library :as3signals, :all		# => will include all available files at lib/as3signals</code></pre>
 
 h3. Build and Installation from Source
 

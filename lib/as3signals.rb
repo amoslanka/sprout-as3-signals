@@ -13,5 +13,6 @@ Sprout::Specification.new do |s|
      t.add_library :src, "../src"
      t.add_library :swc, "../bin"
      t.add_library :docs, "../docs"
+     t.add_library :all, "../"
    end
 end

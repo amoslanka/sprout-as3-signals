@@ -1,6 +1,6 @@
 module AS3Signals
   NAME = "as3signals"
-  VERSION = "0.7.1.pre"
+  VERSION = "0.7.1"
   # VERSION Information
   # x.x (the first two segments) pertain directly to the as3 library
   # In this instance, the third segment pertains to updates to the gem.

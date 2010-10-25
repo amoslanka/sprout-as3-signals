@@ -6,16 +6,16 @@ Gem::Specification.new do |s|
   s.name        = AS3Signals::NAME
   s.version     = AS3Signals::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Robert Penner"]
-  s.email       = ["info@robertpenner.com"]
+  s.authors     = ["Robert Penner", "Amos Lanka"]
+  s.email       = ["info@robertpenner.com", "amoslanka@gmail.com"]
   s.homepage    = "http://www.github.com/amoslanka/sprout-as3-signals"
-  s.summary     = %q{AS3-Signals ActionScript 3 source wrapped in a Sprout::Specification for implementation into a sprout project and Gem::Specification for distribution as a gem.}
-  s.description = %q{Signals is a new approach for AS3 events, inspired by C# events and signals/slots in Qt.}
+  s.summary     = %q{AS3-Signals wrapped in a Sprout::Specification for implementation into a sprout project.}
+  s.description = %q{AS3-Signals wrapped in a Sprout::Specification for implementation into a sprout project. Signals is a new approach for AS3 events, inspired by C# events and signals/slots in Qt.}
 
   s.require_paths = ["lib"]
   
   s.files = Dir["{src,test,tests,asdoc,docs,doc,asdocs,lib,libs}/**/*", "bin/**/*.swc"]
-  s.files << Dir["*.gemspec", "gemfile", "build*", "[A-Z]*[.a-z]*"]
+  s.files.concat Dir["*.gemspec", "gemfile", "build*", "[A-Z]*[.a-z]*"]
   
   # s.files.reject! do |fn| 
   #   fn.include? "CVS"
