@@ -81,9 +81,6 @@ namespace :gem do
       say = "** There are missing swcs, asdocs, or src code. The gem will not be built without these files being provided. To build, run rake task `compile`. **"
       fail say
     end
-
-    puts "#{AS3Signals::NAME}"
-    puts 'hello'
     puts `gem build #{AS3Signals::NAME}.gemspec`
     puts `mv #{filename}.gem pkg/#{filename}.gem`
   end
@@ -95,6 +92,6 @@ namespace :gem do
 
   desc "Build and push #{filename}.gem to rubygems.org"
   task :push => :build do
-    system "gem push #{filename}"
+    system "gem push pkg/#{filename}.gem"
   end
 end

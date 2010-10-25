@@ -14,7 +14,7 @@ Intended for use with a project using Project Sprouts. More information here:
 
 Add the AS3-Signals gem to your Gemfile:
 
-	<pre><code>gem "as3signals", ">= 0.7.0.pre"</code></pre>
+	<pre><code>gem "as3signals", ">= 0.7.0"</code></pre>
 
 Add the AS3-Signals library dependency to your Rakefile:
 
@@ -28,7 +28,7 @@ h3. Ruby Gem
 
 The gem can be installed independently of a project entering this command:
 
-	<pre><code>$ gem install as3signals --pre</code></pre>
+	<pre><code>$ gem install as3signals</code></pre>
 	
 h3. Available assets
 
